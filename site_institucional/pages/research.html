@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="research.page.title">Pesquisa - MitLab</title>
+    <meta name="description" content="Áreas de pesquisa do MitLab focadas na produção de energia elétrica mitocondrial e suas aplicações." data-i18n="research.page.description">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="../assets/css/responsive.css">
+    <link rel="stylesheet" href="../assets/css/flags.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- AOS library for scroll animations -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+    <!-- Header Section -->
+    <header id="header">
+        <div class="container">
+            <div class="logo">
+                <a href="../index.html">
+                    <h1>Mit<span>Lab</span></h1>
+                </a>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="../index.html" data-i18n="nav.home">Início</a></li>
+                    <li class="dropdown">
+                        <a href="#" data-i18n="nav.laboratory">Laboratório</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="about.html" data-i18n="nav.about">Sobre</a></li>
+                            <li><a href="infrastructure.html" data-i18n="nav.infrastructure">Infraestrutura</a></li>
+                            <li><a href="team.html" data-i18n="nav.team">Equipe</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="active" data-i18n="nav.research">Pesquisa</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#science" data-i18n="nav.science">A Ciência</a></li>
+                            <li><a href="#applications" data-i18n="nav.applications">Aplicações</a></li>
+                            <li><a href="#projects" data-i18n="nav.projects">Projetos</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="publications.html" data-i18n="nav.publications">Publicações</a></li>
+                    <li><a href="news.html" data-i18n="nav.news">Notícias</a></li>
+                    <li><a href="contact.html" data-i18n="nav.contact">Contato</a></li>
+                </ul>
+                <div class="language-selector">
+                    <a href="#" data-lang="en"><span class="flag-icon-en"></span></a>
+                    <a href="#" data-lang="pt" class="active"><span class="flag-icon-pt"></span></a>
+                    <a href="#" data-lang="es"><span class="flag-icon-es"></span></a>
+                    <a href="#" data-lang="zh"><span class="flag-icon-zh"></span></a>
+                </div>
+                <div class="search-icon">
+                    <i class="fas fa-search"></i>
+                </div>
+                <div class="mobile-menu">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Search Overlay -->
+    <div class="search-overlay">
+        <div class="container">
+            <div class="search-close">
+                <i class="fas fa-times"></i>
+            </div>
+            <form class="search-form">
+                <input type="text" placeholder="Buscar..." id="search-input" data-i18n="search.placeholder">
+                <button type="submit"><i class="fas fa-search"></i></button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 data-i18n="research.title">Áreas de Pesquisa</h1>
+            <p data-i18n="research.subtitle">Pioneiros no Futuro da Energia Mitocondrial</p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="section-padding">
+        <div class="container">
+            <section id="science" class="research-section">
+                <h2 data-i18n="research.area1.title">A Ciência da Energia Mitocondrial</h2>
+                <div class="research-content">
+                    <div class="research-image">
+                        <img src="../assets/images/research-1.jpg" alt="Ciência da Energia Mitocondrial">
+                    </div>
+                    <div class="research-text">
+                        <p data-i18n="research.area1.description">Investigando como as mitocôndrias convertem nutrientes em energia elétrica através da respiração celular e fosforilação oxidativa, com foco nos mecanismos de produção de ATP.</p>
+                        <p data-i18n="research.area1.extended">As mitocôndrias são as usinas de energia das células, responsáveis pela produção da maior parte do ATP celular através do processo de fosforilação oxidativa. Nossa pesquisa se concentra em entender os mecanismos moleculares envolvidos nesse processo e como podemos aproveitar essa energia para aplicações práticas. Estamos particularmente interessados na cadeia transportadora de elétrons e no gradiente eletroquímico que impulsiona a síntese de ATP.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="applications" class="research-section">
+                <h2 data-i18n="research.area2.title">Aplicações de Energia Sustentável</h2>
+                <div class="research-content">
+                    <div class="research-image">
+                        <img src="../assets/images/research-2.jpg" alt="Aplicações de Energia Sustentável">
+                    </div>
+                    <div class="research-text">
+                        <p data-i18n="research.area2.description">Desenvolvendo mitocôndrias como fonte de energia limpa e renovável com significativos benefícios ambientais em comparação com fontes de energia convencionais.</p>
+                        <p data-i18n="research.area2.extended">Nosso laboratório está na vanguarda do desenvolvimento de tecnologias que utilizam processos mitocondriais para gerar energia elétrica de forma sustentável. Estamos explorando como as mitocôndrias podem ser utilizadas em biobaterias e células de biocombustível, oferecendo alternativas mais limpas e eficientes às fontes de energia tradicionais. Esses sistemas têm o potencial de revolucionar a maneira como geramos e utilizamos energia.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="medical" class="research-section">
+                <h2 data-i18n="research.area3.title">Aplicações Médicas</h2>
+                <div class="research-content">
+                    <div class="research-image">
+                        <img src="../assets/images/research-3.jpg" alt="Aplicações Médicas">
+                    </div>
+                    <div class="research-text">
+                        <p data-i18n="research.area3.description">Criando soluções médicas inovadoras, incluindo dispositivos implantáveis alimentados por energia mitocondrial e desenvolvendo terapias para doenças mitocondriais.</p>
+                        <p data-i18n="research.area3.extended">As disfunções mitocondriais estão associadas a diversas doenças, desde distúrbios neurodegenerativos até doenças metabólicas. Nossa pesquisa visa desenvolver terapias direcionadas para tratar essas condições, bem como criar dispositivos médicos implantáveis que possam ser alimentados pela própria energia celular do paciente, eliminando a necessidade de baterias externas ou procedimentos de substituição frequentes.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="bioelectronics" class="research-section">
+                <h2 data-i18n="research.area4.title">Bioeletrônica e Nanotecnologia</h2>
+                <div class="research-content">
+                    <div class="research-image">
+                        <img src="../assets/images/research-4.jpg" alt="Bioeletrônica e Nanotecnologia">
+                    </div>
+                    <div class="research-text">
+                        <p data-i18n="research.area4.description">Explorando o uso de energia mitocondrial em eletrônicos de baixa potência, biossensores e aplicações de nanotecnologia.</p>
+                        <p data-i18n="research.area4.extended">A integração de sistemas biológicos com dispositivos eletrônicos representa uma fronteira emocionante na ciência moderna. Nosso laboratório está desenvolvendo interfaces entre mitocôndrias e circuitos eletrônicos, permitindo a criação de biossensores ultrassensíveis e dispositivos de computação bioinspirados. Essas tecnologias têm aplicações potenciais em diagnósticos médicos, monitoramento ambiental e sistemas de computação de próxima geração.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="aging" class="research-section">
+                <h2 data-i18n="research.area5.title">Envelhecimento e Mitocôndrias</h2>
+                <div class="research-content">
+                    <div class="research-image">
+                        <img src="../assets/images/research-5.jpg" alt="Envelhecimento e Mitocôndrias">
+                    </div>
+                    <div class="research-text">
+                        <p data-i18n="research.area5.description">Estudando o papel da disfunção mitocondrial no envelhecimento e doenças relacionadas à idade.</p>
+                        <p data-i18n="research.area5.extended">A função mitocondrial diminui com a idade, contribuindo para muitos aspectos do processo de envelhecimento. Nossa pesquisa investiga os mecanismos subjacentes a essa disfunção e desenvolve estratégias para preservar a saúde mitocondrial ao longo da vida. Estamos particularmente interessados em como o estresse oxidativo, as mutações do DNA mitocondrial e as alterações na dinâmica mitocondrial contribuem para o envelhecimento celular e as doenças relacionadas à idade.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="therapeutics" class="research-section">
+                <h2 data-i18n="research.area6.title">Terapêutica Mitocondrial</h2>
+                <div class="research-content">
+                    <div class="research-image">
+                        <img src="../assets/images/research-6.jpg" alt="Terapêutica Mitocondrial">
+                    </div>
+                    <div class="research-text">
+                        <p data-i18n="research.area6.description">Desenvolvendo abordagens terapêuticas direcionadas à função mitocondrial para o tratamento de doenças mitocondriais e distúrbios relacionados.</p>
+                        <p data-i18n="research.area6.extended">As doenças mitocondriais representam um grupo diversificado de distúrbios causados por disfunções nas mitocôndrias. Nosso laboratório está na vanguarda do desenvolvimento de terapias inovadoras para essas condições, incluindo terapia gênica, moduladores metabólicos e abordagens de medicina regenerativa. Nosso objetivo é traduzir descobertas científicas básicas em tratamentos eficazes para pacientes com doenças mitocondriais.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="projects" class="research-section">
+                <h2 data-i18n="research.projects.title">Projetos Atuais</h2>
+                <div class="projects-grid">
+                    <div class="project-card" data-aos="fade-up">
+                        <h3 data-i18n="research.projects.project1.title">Biobaterias Mitocondriais</h3>
+                        <p data-i18n="research.projects.project1.description">Desenvolvimento de biobaterias utilizando mitocôndrias isoladas para geração de energia sustentável em dispositivos de baixo consumo.</p>
+                    </div>
+                    <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+                        <h3 data-i18n="research.projects.project2.title">Terapia Gênica para Doenças Mitocondriais</h3>
+                        <p data-i18n="research.projects.project2.description">Desenvolvimento de abordagens de terapia gênica para corrigir mutações no DNA mitocondrial associadas a doenças hereditárias.</p>
+                    </div>
+                    <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+                        <h3 data-i18n="research.projects.project3.title">Biossensores Baseados em Mitocôndrias</h3>
+                        <p data-i18n="research.projects.project3.description">Criação de biossensores ultrassensíveis utilizando mitocôndrias para detecção de toxinas ambientais e compostos farmacêuticos.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer Section -->
+    <footer id="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3 data-i18n="footer.indicators">Indicadores</h3>
+                    <ul>
+                        <li><span data-i18n="footer.projects">Projetos</span>: 25+</li>
+                        <li><span data-i18n="footer.researchers">Pesquisadores</span>: 40+</li>
+                        <li><span data-i18n="footer.publications">Publicações</span>: 120+</li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3 data-i18n="footer.team">Nossa Equipe</h3>
+                    <ul>
+                        <li><a href="team.html#professors" data-i18n="footer.professors">Professores</a></li>
+                        <li><a href="team.html#students" data-i18n="footer.students">Estudantes</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3 data-i18n="footer.location">Localização</h3>
+                    <address>
+                        <p data-i18n="footer.address">123 Avenida da Ciência, Parque de Pesquisa</p>
+                        <p data-i18n="footer.phone">Telefone: +1 (555) 123-4567</p>
+                        <p data-i18n="footer.email">Email: info@mitlab.org</p>
+                    </address>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 MitLab - <span data-i18n="footer.rights">Todos os Direitos Reservados</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript Files -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/i18n.js"></script>
+    <script src="../assets/js/animations.js"></script>
+</body>
+</html>

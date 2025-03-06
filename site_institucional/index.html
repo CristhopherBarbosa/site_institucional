@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MitLab - Pesquisa em Energia Mitocondrial</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .hero {
+            background-image: url('https://imgur.com/ermLLQ4.png');
+            background-size: cover;
+            background-position: center;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+        }
+        .hero h1 {
+            font-family: 'Georgia', serif;
+            font-size: 3em;
+        }
+        .content {
+            padding: 60px 0;
+        }
+        .section-title {
+            font-family: 'Georgia', serif;
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+        .research, .team, .footer {
+            background-color: white;
+            padding: 40px 20px;
+            margin-bottom: 20px;
+        }
+        .team .member {
+            text-align: center;
+        }
+        .team .member img {
+            width: 150px;
+            border-radius: 50%;
+        }
+        .footer {
+            background-color: #003366;
+            color: white;
+            text-align: center;
+        }
+        .flag-icon {
+            width: 20px;
+            height: 20px;
+            margin: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header class="fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="#">MitLab</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item"><a class="nav-link" href="#science" data-lang="science">A Ciência</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#applications" data-lang="applications">Aplicações</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#company" data-lang="company">A Empresa</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#additional" data-lang="additional">Informações</a></li>
+                    </ul>
+                    <div class="d-flex align-items-center">
+                        <img src="https://imgur.com/Ya1XsUT.png" alt="English" onclick="changeLanguage('en')" class="flag-icon">
+                        <img src="https://imgur.com/pRKF8kd.png" alt="Portuguese" onclick="changeLanguage('pt')" class="flag-icon">
+                        <img src="https://imgur.com/yz40UUP.png" alt="Spanish" onclick="changeLanguage('es')" class="flag-icon">
+                        <img src="https://imgur.com/hxgCyX9.png" alt="Mandarin" onclick="changeLanguage('zh')" class="flag-icon">
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="hero">
+        <h1 data-lang="hero-title">Energia Mitocondrial</h1>
+    </div>
+    <div class="content container">
+        <section id="science" class="research">
+            <h2 class="section-title" data-lang="science-title">A Ciência por Trás da Energia Mitocondrial</h2>
+            <p data-lang="science-description">Detalhes sobre como as mitocôndrias são utilizadas para produzir energia elétrica...</p>
+        </section>
+        <section id="applications" class="research">
+            <h2 class="section-title" data-lang="applications-title">Áreas de Atuação</h2>
+            <p data-lang="applications-description">Exploração detalhada das áreas de pesquisa do MitLab...</p>
+        </section>
+        <section id="company" class="team">
+            <h2 class="section-title" data-lang="company-title">Nossa Equipe</h2>
+            <div class="row">
+                <div class="col-md-4 member">
+                    <img src="https://imgur.com/4Q3b6pr.png" alt="Membro 1">
+                    <p data-lang="member-1">Professora</p>
+                </div>
+                <div class="col-md-4 member">
+                    <img src="https://imgur.com/UH51dXZ.png" alt="Membro 2">
+                    <p data-lang="member-2">Aluna</p>
+                </div>
+                <div class="col-md-4 member">
+                    <img src="https://imgur.com/TWSN38C.png" alt="Membro 3">
+                    <p data-lang="member-3">Doutorando</p>
+                </div>
+            </div>
+        </section>
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div class="card" onclick="loadContent('science')">
+                        <div class="card-body">
+                            <h5 class="card-title" data-lang="card-science-title">A Ciência por Trás da Energia Mitocondrial</h5>
+                            <p class="card-text" data-lang="card-science-description">Uma visão geral sobre como as mitocôndrias convertem nutrientes em energia elétrica e a importância desse processo.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card" onclick="loadContent('applications')">
+                        <div class="card-body">
+                            <h5 class="card-title" data-lang="card-applications-title">Aplicações e Benefícios</h5>
+                            <p class="card-text" data-lang="card-applications-description">O impacto da energia mitocondrial na sustentabilidade, saúde e tecnologia.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card" onclick="loadContent('company')">
+                        <div class="card-body">
+                            <h5 class="card-title" data-lang="card-company-title">A Empresa/Instituição</h5>
+                            <p class="card-text" data-lang="card-company-description">Quem somos, nossa equipe e nossa missão na pesquisa de energia mitocondrial.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card" onclick="loadContent('additional')">
+                        <div class="card-body">
+                            <h5 class="card-title" data-lang="card-additional-title">Informações Adicionais</h5>
+                            <p class="card-text" data-lang="card-additional-description">Notícias, publicações científicas e formas de contato.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="content-detail" class="mt-5"></div>
+        </div>
+    </div>
+    <footer class="footer">
+        <p data-lang="footer-text">&copy; 2025 MitLab. Todos os direitos reservados.</p>
+        <p data-lang="footer-contact">Contatos: email@mitlab.com | +55 11 1234-5678</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        const translations = {
+            pt: {
+                "science": "A Ciência",
+                "applications": "Aplicações",
+                "company": "A Empresa",
+                "additional": "Informações",
+                "hero-title": "Energia Mitocondrial",
+                "hero-description": "Este é um site de exemplo com suporte a múltiplos idiomas.",
+                "science-title": "A Ciência por Trás da Energia Mitocondrial",
+                "science-description": "Detalhes sobre como as mitocôndrias são utilizadas para produzir energia elétrica...",
+                "applications-title": "Áreas de Atuação",
+                "applications-description": "Exploração detalhada das áreas de pesquisa do MitLab...",
+                "company-title": "Nossa Equipe",
+                "member-1": "Professora",
+                "member-2": "Aluna",
+                "member-3": "Doutorando",
+                "card-science-title": "A Ciência por Trás da Energia Mitocondrial",
+                "card-science-description": "Uma visão geral sobre como as mitocôndrias convertem nutrientes em energia elétrica e a importância desse processo.",
+                "card-applications-title": "Aplicações e Benefícios",
+                "card-applications-description": "O impacto da energia mitocondrial na sustentabilidade, saúde e tecnologia.",
+                "card-company-title": "A Empresa/Instituição",
+                "card-company-description": "Quem somos, nossa equipe e nossa missão na pesquisa de energia mitocondrial.",
+                "card-additional-title": "Informações Adicionais",
+                "card-additional-description": "Notícias, publicações científicas e formas de contato.",
+                "footer-text": "&copy; 2025 MitLab. Todos os direitos reservados.",
+                "footer-contact": "Contatos: email@mitlab.com | +55 11 1234-5678"
+            },
+            en: {
+                "science": "Science",
+                "applications": "Applications",
+                "company": "Company",
+                "additional": "Information",
+                "hero-title": "Mitochondrial Energy",
+                "hero-description": "This is a sample website with multilingual support.",
+                "science-title": "The Science Behind Mitochondrial Energy",
+                "science-description": "Details on how mitochondria are used to produce electrical energy...",
+                "applications-title": "Areas of Research",
+                "applications-description": "In-depth exploration of MitLab's research areas...",
+                "company-title": "Our Team",
+                "member-1": "Professor",
+                "member-2": "Student",
+                "member-3": "PhD Student",
+                "card-science-title": "The Science Behind Mitochondrial Energy",
+                "card-science-description": "An overview of how mitochondria convert nutrients into electrical energy and the importance of this process.",
+                "card-applications-title": "Applications and Benefits",
+                "card-applications-description": "The impact of mitochondrial energy on sustainability, health, and technology.",
+                "card-company-title": "The Company/Institution",
+                "card-company-description": "Who we are, our team, and our mission in mitochondrial energy research.",
+                "card-additional-title": "Additional Information",
+                "card-additional-description": "News, scientific publications, and contact forms.",
+                "footer-text": "&copy; 2025 MitLab. All rights reserved.",
+                "footer-contact": "Contacts: email@mitlab.com | +55 11 1234-5678"
+            },
+            es: {
+                "science": "La Ciencia",
+                "applications": "Aplicaciones",
+                "company": "La Empresa",
+                "additional": "Información",
+                "hero-title": "Energía Mitocondrial",
+                "hero-description": "Este es un sitio web de ejemplo con soporte multilingüe.",
+                "science-title": "La Ciencia detrás de la Energía Mitocondrial",
+                "science-description": "Detalles sobre cómo las mitocondrias son utilizadas para producir energía eléctrica...",
+                "applications-title": "Áreas de Investigación",
+                "applications-description": "Exploración detallada de las áreas de investigación de MitLab...",
+                "company-title": "Nuestro Equipo",
+                "member-1": "Profesor",
+                "member-2": "Estudiante",
+                "member-3": "Estudiante de Doctorado",
+                "card-science-title": "La Ciencia detrás de la Energía Mitocondrial",
+                "card-science-description": "Una visión general sobre cómo las mitocondrias convierten nutrientes en energía eléctrica y la importancia de este proceso.",
+                "card-applications-title": "Aplicaciones y Beneficios",
+                "card-applications-description": "El impacto de la energía mitocondrial en la sostenibilidad, la salud y la tecnología.",
+                "card-company-title": "La Empresa/Institución",
+                "card-company-description": "Quiénes somos, nuestro equipo y nuestra misión en la investigación de energía mitocondrial.",
+                "card-additional-title": "Información Adicional",
+                "card-additional-description": "Noticias, publicaciones científicas y formularios de contacto.",
+                "footer-text": "&copy; 2025 MitLab. Todos los derechos reservados.",
+                "footer-contact": "Contactos: email@mitlab.com | +55 11 1234-5678"
+            },
+            zh: {
+                "science": "科学",
+                "applications": "应用",
+                "company": "公司",
+                "additional": "信息",
+                "hero-title": "线粒体能量",
+                "hero-description": "这是一个支持多语言的示例网站。",
+                "science-title": "线粒体能量背后的科学",
+                "science-description": "关于线粒体如何被用来产生电能的细节...",
+                "applications-title": "研究领域",
+                "applications-description": "对MitLab研究领域的深入探讨...",
+                "company-title": "我们的团队",
+                "member-1": "教授",
+                "member-2": "学生",
+                "member-3": "博士生",
+                "card-science-title": "线粒体能量背后的科学",
+                "card-science-description": "关于线粒体如何将营养物质转化为电能以及这一过程的重要性的概述。",
+                "card-applications-title": "应用和益处",
+                "card-applications-description": "线粒体能量对可持续性、健康和技术的影响。",
+                "card-company-title": "公司/机构",
+                "card-company-description": "我们是谁，我们的团队和我们的使命是在线粒体能量研究中。",
+                "card-additional-title": "更多信息",
+                "card-additional-description": "新闻、科学出版物和联系方式。",
+                "footer-text": "&copy; 2025 MitLab. 保留所有权利。",
+                "footer-contact": "联系方式: email@mitlab.com | +55 11 1234-5678"
+            }
+        };
+
+        function changeLanguage(lang) {
+            document.documentElement.lang = lang;
+            localStorage.setItem("language", lang);
+            document.querySelectorAll("[data-lang]").forEach(element => {
+                const key = element.getAttribute("data-lang");
+                element.textContent = translations[lang][key];
+            });
+        }
+
+        window.onload = () => {
+            const savedLanguage = localStorage.getItem("language") || "pt";
+            changeLanguage(savedLanguage);
+        };
+
+        function loadContent(section) {
+            let content = '';
+            switch(section) {
+                case 'science':
+                    content = `<h2 data-lang="science-title">A Ciência por Trás da Energia Mitocondrial</h2>
+                               <p data-lang="science-description">Processo de conversão energética (respiração celular, fosforilação oxidativa, ATP).</p>
+                               <p data-lang="science-description-2">Pesquisas recentes e avanços tecnológicos.</p>
+                               <p data-lang="science-description-3">Instituições e cientistas envolvidos.</p>`;
+                    break;
+                case 'applications':
+                    content = `<h2 data-lang="applications-title">Aplicações e Benefícios</h2>
+                               <p data-lang="applications-description">Energia limpa e renovável, comparação com outras fontes.</p>
+                               <p data-lang="applications-description-2">Uso em dispositivos médicos e terapias para doenças mitocondriais.</p>
+                               <p data-lang="applications-description-3">Aplicações em nanotecnologia, biossensores e eletrônica de baixo consumo.</p>`;
+                    break;
+                case 'company':
+                    content = `<h2 data-lang="company-title">A Empresa/Instituição</h2>
+                               <p data-lang="company-description">Missão e visão: compromisso com a inovação e desenvolvimento.</p>
+                               <p data-lang="company-description-2">Equipe de cientistas, engenheiros e especialistas.</p>
+                               <p data-lang="company-description-3">Parcerias com outras instituições e projetos em andamento.</p>`;
+                    break;
+                case 'additional':
+                    content = `<h2 data-lang="additional-title">Informações Adicionais</h2>
+                               <p data-lang="additional-description">Últimos avanços na área e eventos científicos.</p>
+                               <p data-lang="additional-description-2">Artigos, estudos e materiais de referência.</p>
+                               <p data-lang="additional-description-3">Informações para contato e colaboração.</p>`;
+                    break;
+            }
+            document.getElementById('content-detail').innerHTML = content;
+            document.getElementById('content-detail').scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>
